@@ -4,7 +4,7 @@ void main() {
   var s = HelloWorld3();
   print(s);
   HelloWorld4(4);
-  HelloWorld5();
+  HelpWorld("world - 5!");
 }
 
 void HelloWorld2() {
@@ -21,24 +21,13 @@ void HelloWorld4(int num) {
   }
 }
 
-void HelloWorld5() {
-  var helloWorld = [
-    'H',
-    'e',
-    'l',
-    'l',
-    'o',
-    ' ',
-    'w',
-    'o',
-    'r',
-    'l',
-    'd',
-    '-',
-    '5',
-    '!'
-  ];
+void HelloWorld5(String world) {
+  var helloWorld = ['H', 'e', 'l', 'l', 'o', ' ', world];
   for (int i = 0; i < helloWorld.length; i++) {
     print(helloWorld[i]);
   }
+}
+
+void HelpWorld(String world) {
+  HelloWorld5(world);
 }
